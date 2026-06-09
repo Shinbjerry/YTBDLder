@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube视频下载工具 - 首页</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8m18 0l-3.26-3.26A9.75 9.75 0 0 0 12 3a9 9 0 0 0 0 18 9.75 9.75 0 0 0 6.74-2.74L21 16m-18 0l3.26 3.26A9.75 9.75 0 0 0 12 21a9 9 0 0 0 9-9 9.75 9.75 0 0 0-6.74-2.74L12 10"></path>
+            <polygon points="9 9 15 15 9 21"></polygon>
+          </svg>
+          <span>YouTube下载器</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="nav-link active">首页</a>
+          <a href="download.html" class="nav-link">下载工具</a>
+          <a href="pricing.html" class="nav-link">充值套餐</a>
+          <a href="about.html" class="nav-link">关于我们</a>
+        </nav>
+        <div class="user-section" id="userSection">
+          <button class="login-btn" onclick="showLoginModal()">登录</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="hero">
+      <div class="container">
+        <h1>YouTube视频下载工具</h1>
+        <p class="subtitle">一键下载YouTube高清视频，支持多种分辨率</p>
+        <a href="download.html" class="cta-btn">立即使用</a>
+        
+        <div class="hero-disclaimer">
+          <p>⚠️ <strong>重要声明：</strong>下载的视频仅供个人学习研究使用，严禁用于商业用途</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="container">
+        <h2>功能特点</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+            </div>
+            <h3>简单易用</h3>
+            <p>只需输入YouTube链接，一键下载</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>高清画质</h3>
+            <p>支持1080P、720P等多种分辨率</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8m18 0l-3.26-3.26A9.75 9.75 0 0 0 12 3a9 9 0 0 0 0 18 9.75 9.75 0 0 0 6.74-2.74L21 16m-18 0l3.26 3.26A9.75 9.75 0 0 0 12 21a9 9 0 0 0 9-9 9.75 9.75 0 0 0-6.74-2.74L12 10"></path>
+                <polygon points="9 9 15 15 9 21"></polygon>
+              </svg>
+            </div>
+            <h3>YouTube专用</h3>
+            <p>专注YouTube视频下载，解析更稳定</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="12 15 12 9 8 11"></polyline>
+              </svg>
+            </div>
+            <h3>快速下载</h3>
+            <p>高速下载通道，节省等待时间</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="usage-steps">
+      <div class="container">
+        <h2>使用步骤</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>登录账号</h3>
+            <p>注册并登录您的账号</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>输入链接</h3>
+            <p>复制YouTube视频链接粘贴到输入框</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>选择格式</h3>
+            <p>选择需要的分辨率</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>开始下载</h3>
+            <p>点击下载按钮保存到本地</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="disclaimer-section">
+      <div class="container">
+        <h2>版权声明</h2>
+        <div class="disclaimer-content">
+          <p><strong>重要提示：</strong></p>
+          <ul>
+            <li>本工具仅供个人学习和研究使用</li>
+            <li>严禁将下载的视频用于商业用途</li>
+            <li>下载前请确保已获得版权所有者授权</li>
+            <li>本工具不承担任何法律责任</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 YouTube视频下载工具. All rights reserved.</p>
+      <p class="footer-disclaimer">本工具仅供个人学习研究使用，严禁用于商业用途。</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="loginModal" style="display: none;">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>用户登录</h3>
+        <button class="close-btn" onclick="hideLoginModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="form-group">
+            <label>用户名</label>
+            <input type="text" id="username" placeholder="请输入用户名">
+          </div>
+          <div class="form-group">
+            <label>密码</label>
+            <input type="password" id="password" placeholder="请输入密码">
+          </div>
+          <button type="submit" class="submit-btn">登录</button>
+          <p class="register-link">还没有账号？<a href="#" onclick="showRegisterModal()">立即注册</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="registerModal" style="display: none;">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>用户注册</h3>
+        <button class="close-btn" onclick="hideRegisterModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="registerForm">
+          <div class="form-group">
+            <label>用户名</label>
+            <input type="text" id="regUsername" placeholder="请输入用户名">
+          </div>
+          <div class="form-group">
+            <label>邮箱</label>
+            <input type="email" id="regEmail" placeholder="请输入邮箱">
+          </div>
+          <div class="form-group">
+            <label>密码</label>
+            <input type="password" id="regPassword" placeholder="请输入密码">
+          </div>
+          <button type="submit" class="submit-btn">注册</button>
+          <p class="register-link">已有账号？<a href="#" onclick="showLoginModal()">立即登录</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
